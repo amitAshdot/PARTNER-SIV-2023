@@ -1,0 +1,20 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typogrophy";
+@import "base/accessibility";
+@import "base/utilities";
+
+
+@import "layout/main-page/top-section";
+@import "layout/main-page/form";
+@import "layout/main-page/packs";
+@import "layout/main-page/advantage";
+@import "layout/main-page/speed-section";
+@import "layout/main-page/pros-section";
+@import "layout/main-page/qa";
+@import "layout/main-page/mishpat";
+// @import "layout/main-page/packs";
+// @import "layout/thank-you-page";

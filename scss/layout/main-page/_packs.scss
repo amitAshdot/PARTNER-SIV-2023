@@ -1,0 +1,227 @@
+.packs {
+    text-align: center;
+
+    &-title {
+        font-size: 2em;
+        line-height: 1;
+        font-family: 'simpler-bold', sans-serif;
+        padding-block-end: 0.5rem;
+        color: white;
+
+        @include respond(mini-desktop) {
+            font-size: 4rem;
+            padding-block-end: 2.5rem;
+        }
+
+    }
+
+    &-section {
+        // background-color: $color-primary;
+        width: 100%;
+        display: block;
+        padding: 5rem 0 2.5rem 0;
+        box-sizing: border-box;
+
+        @include respond(mini-desktop) {
+            padding-block-start: 16rem;
+        }
+    }
+
+    .packs-container {
+        display: flex;
+        width: 75rem;
+        margin: auto;
+        justify-content: space-around;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+
+.pack {
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 2.1rem;
+    border: 2px solid $color-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    justify-content: space-between;
+
+    @include respond(mini-desktop) {
+        padding: 2.8rem 1.3rem 1.8rem;
+        width: 68%;
+    }
+
+    h3.speedtxt {
+        font-size: 1.1rem;
+        line-height: 100%;
+        font-family: simpler-bold;
+        width: 60%;
+
+        @include respond(mini-desktop) {
+            font-size: 2.8rem;
+            width: 66%;
+        }
+    }
+
+    .mb {
+        font-size: 2rem;
+        font-family: 'simpler-bolder', sans-serif;
+        line-height: 1;
+
+
+        @include respond(mini-desktop) {
+            font-size: 5.1rem;
+        }
+
+        // span {
+        //     font-size: 2rem;
+        //     font-family: 'simpler-bold', sans-serif;
+
+        //     @include respond(mini-desktop) {
+        //         font-size: 3.5rem;
+        //     }
+        // }
+    }
+
+    .speed {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-block-start: 1rem;
+
+        @include respond(mini-desktop) {
+            justify-content: space-around;
+            ;
+        }
+
+        &-details {
+            font-size: 1rem;
+
+            @include respond(mini-desktop) {
+                font-size: 2rem;
+            }
+
+            & img {
+                width: 1.2rem;
+
+                @include respond(mini-desktop) {
+                    width: 2.8rem;
+                }
+            }
+        }
+
+    }
+
+    .price {
+        font-family: "simpler", sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.18rem;
+        line-height: 100%;
+        // font-family: simpler-bold;
+        border-top: 1px solid #000000;
+        width: 100%;
+        // margin-block-start: 2rem;
+        padding-block-start: 1rem;
+
+        @include respond(mini-desktop) {
+            font-size: 2.5rem;
+            gap: 1rem;
+            padding-block-start: 2rem;
+        }
+
+        & span {
+            color: $color-primary;
+            font-size: 1rem;
+
+            @include respond(mini-desktop) {
+                font-size: 2rem;
+                color: $color-primary-dark;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        position: relative;
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 1% 1% 1% 1%;
+        text-decoration: none;
+        box-sizing: border-box;
+        background-color: $color-secondary;
+        font-family: 'simpler-bolder', sans-serif;
+        border: 2px solid;
+        margin: 1.2rem 0 0 0;
+
+        cursor: pointer;
+
+        @include respond(mini-desktop) {
+            border: 2px solid;
+            width: 80%;
+            padding: 1rem;
+            display: flex;
+            margin: 2rem 3.5rem;
+            margin-block-start: 3rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0%;
+            top: 0;
+            z-index: -1;
+            background: white;
+            z-index: 1;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        &:hover,
+        &:focus {
+            &::after {
+                width: 100%;
+            }
+        }
+
+        & .text {
+            position: relative;
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: transparent;
+            font-family: 'simpler-bolder', sans-serif;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            z-index: 2;
+
+            @include respond(mini-desktop) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.slick-slide {
+    margin-inline: 0.5rem;
+    border-radius: 1.2rem;
+    background: #ffffff;
+    //    padding:2rem 2rem 1rem;
+}

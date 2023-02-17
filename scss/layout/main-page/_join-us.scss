@@ -1,0 +1,812 @@
+.join-us {
+    &-section {
+        position: relative;
+        padding-block-end: 14.75rem;
+        padding-inline-start: 8rem;
+        padding-inline-end: 8rem;
+        padding-block-start: 6.4rem;
+
+        @include respond(mini-desktop) {
+            padding-inline: 2.5rem;
+        }
+    }
+
+    // &-title {
+    //     @include respond(mini-desktop) {
+    //         text-align: center;
+    //     }
+    // }
+
+    &-text {
+        @include respond(mini-desktop) {
+            font-size: 3.15rem;
+            text-align: center;
+        }
+
+        &-primaryColor {
+            margin-block-start: 1rem;
+            color: $color-primary;
+
+            @include respond(mini-desktop) {
+                font-size: 3.15rem;
+                line-height: 3.2rem;
+                text-align: center;
+                margin-block-start: 2rem;
+            }
+
+        }
+    }
+
+    &-small {
+        position: absolute;
+        left: 12%;
+        top: 12%;
+        object-fit: contain;
+        transform: rotate(337deg);
+        width: 6.11rem;
+        height: 4.35rem;
+        z-index: -1;
+
+        @include respond(mini-desktop) {
+            left: 6%;
+            top: 1%;
+        }
+    }
+
+    &-face {
+        position: absolute;
+        left: 20%;
+        width: 23.5rem;
+        height: 27.5rem;
+        object-fit: contain;
+        z-index: -1;
+
+        @include respond(mini-desktop) {
+            left: 78%;
+            top: 2rem;
+            width: 17rem;
+            height: auto;
+        }
+    }
+}
+
+.tab {
+    display: flex;
+    height: $tab-total-height;
+    gap: 0.53rem;
+
+    @include respond(mini-desktop) {
+        margin-block: 1.5rem;
+        height: 6.5rem;
+        // align-content: space-between;
+        gap: initial;
+        justify-content: space-between;
+    }
+
+    &-containver {
+        padding: 10px;
+    }
+
+    &-links {
+        width: 6.7rem;
+        height: 2.15rem;
+        padding: 0;
+        border-radius: 5rem;
+        border-radius: 21.5px;
+        background-color: #f0f6ff;
+        border: 0;
+        font-size: 1rem;
+        font-family: 'simpler', sans-serif;
+        cursor: pointer;
+
+        transition: 0.3s all;
+
+        @include respond(mini-desktop) {
+            width: 15.85rem;
+            height: 5.15rem;
+            font-size: 2.5rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-top: $tab-tooltip-height solid transparent;
+            border-right: $tab-tooltip-height solid transparent;
+            border-bottom: $tab-tooltip-height solid transparent;
+            border-left: $tab-tooltip-height solid transparent;
+            bottom: 0.1rem;
+            right: 50%;
+            transform: translate(50%, -25%);
+            z-index: -1;
+        }
+
+        &.active,
+        &:hover,
+        &:focus {
+            background: $color-primary;
+            color: white;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0px;
+                height: 0px;
+                border-top: $tab-tooltip-height solid $color-primary;
+                border-right: $tab-tooltip-height solid transparent;
+                border-bottom: $tab-tooltip-height solid transparent;
+                border-left: $tab-tooltip-height solid transparent;
+                bottom: 0.1rem;
+                right: 50%;
+                transform: translate(50%, 50%);
+                z-index: 1;
+                transition: 0.3s all 0.1s;
+
+                @include respond(mini-desktop) {
+                    border-top: 1rem solid #4285f5;
+                    border-right: 1rem solid transparent;
+                    border-bottom: 1rem solid transparent;
+                    border-left: 1rem solid transparent;
+                    bottom: 0.6rem;
+                }
+            }
+        }
+
+        &-container {
+            width: fit-content;
+            position: relative;
+        }
+    }
+}
+
+.job {
+    width: 19rem;
+    height: 19.2rem;
+    cursor: pointer;
+
+    // border: solid 2px #4285f5;
+    // border-radius: 20px;
+    // padding: 30px;
+    @include respond(mini-desktop) {
+        width: 100%;
+        height: auto;
+    }
+
+    &-top {
+        position: relative;
+        // margin: 0 0 29px;
+        padding: 1.7rem 1.5rem 1.8rem;
+        object-fit: contain;
+        background-color: $color-primary;
+        border-radius: 20px 20px 0 0;
+        width: 19rem;
+        cursor: pointer;
+
+        &::after {
+            aspect-ratio: 1.25;
+            content: "";
+            position: absolute;
+            display: block;
+            background: url(../assets/images/job-section/briefcase@2x.webp) no-repeat;
+            background-size: contain;
+            width: 2.9rem;
+            height: 2.9rem;
+            top: 50%;
+            left: 10%;
+            transform: translate(-17%, -47%);
+        }
+
+        @include respond(mini-desktop) {
+            width: 100%;
+            padding-block: 4.5rem;
+            padding-inline: 3rem;
+
+            &::after {
+                width: 8rem;
+                height: auto;
+            }
+
+            //    height: auto;
+        }
+
+        &-info-title {
+            font-size: 1.2rem;
+            line-height: 26px;
+            color: #fff;
+
+            @include respond(mini-desktop) {
+                font-size: 3.2rem;
+                line-height: 4.2rem;
+            }
+        }
+
+        p {
+            padding-inline-start: 1rem;
+            position: relative;
+            color: #fff;
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+
+            @include respond(mini-desktop) {
+                padding-inline-start: 2rem;
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            &::before {
+                // aspect-ratio: 1.25;
+                content: "";
+                position: absolute;
+                display: block;
+                background: url(../assets/images/job-section/placeholder@3x.webp) no-repeat;
+                width: 0.65rem;
+                height: 0.85rem;
+                background-size: contain;
+                top: 50%;
+                right: 1%;
+                transform: translate(30%, -50%);
+
+                @include respond(mini-desktop) {
+                    width: 1.4rem;
+                    height: 1.7rem;
+                }
+
+            }
+        }
+    }
+
+    &-bottom {
+        width: 19rem;
+        // height: 385px;
+        padding-inline: 1.2rem;
+        padding-block-start: 1rem;
+        padding-block-end: 0.8rem;
+        object-fit: contain;
+        border-radius: 0 0 20px 20px;
+        border: solid 2px $color-primary-part-transparent;
+        background-color: white;
+        // background-color: #f0f6ff;
+        font-size: 1rem;
+        // line-height: 1.5rem;
+        cursor: pointer;
+
+        @include respond(mini-desktop) {
+            width: 100%;
+            padding-block: 3rem;
+            //    height: auto;
+        }
+
+        li {
+            position: relative;
+            line-height: 1rem;
+            margin-block-end: 0.6rem;
+            margin-inline-start: auto;
+            margin-inline-end: 0.5rem;
+            list-style-position: outside;
+            width: 89%;
+            overflow: initial;
+
+            @include respond(mini-desktop) {
+                margin-inline-end: 3rem;
+                width: 85%;
+            }
+
+            &::marker {
+                content: initial;
+                color: $color-primary;
+                font-size: 1.5rem;
+
+                @include respond(mini-desktop) {
+
+                    font-size: 2.8rem;
+                }
+            }
+
+            &>p {
+                display: inline;
+                font-size: 1rem;
+
+                @include respond(mini-desktop) {
+                    line-height: 3.5rem;
+                    font-size: 2.8rem;
+                    margin-block-end: 0.6rem;
+                    padding-inline-end: 1rem;
+                    // padding-inline-start: 4rem;
+                }
+            }
+
+            // &::after {
+            //     content: " ";
+            //     width: 0.42rem;
+            //     position: absolute;
+            //     height: 0.42rem;
+            //     background: #4285f4;
+            //     border-radius: 50%;
+            //     right: 0;
+            //     top: 0.28rem;
+
+            // }
+        }
+    }
+
+    & .btn {
+        // @include global-btn($color-white, $color-primary, $color-primary);
+        border-radius: 10rem;
+        border: 2px solid $color-primary;
+        color: $color-white;
+        background-color: $color-primary;
+        text-align: center;
+        font-size: 1.125rem;
+        font-family: "FedraSansMedium", sans-serif;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        z-index: 1;
+        transition: color 0.2s ease;
+        text-decoration: none;
+        width: 10rem;
+        height: 2.2rem;
+        padding: 0.4rem;
+        line-height: 1rem;
+        font-size: 0.9rem;
+        margin-block-start: 0.5rem;
+
+        @include respond(mini-desktop) {
+            width: 25rem;
+            height: 5.5rem;
+            padding: 0.4rem;
+            line-height: 2.2rem;
+            font-size: 2.2rem;
+            display: flex;
+            justify-content: center;
+            margin-inline-start: 1rem;
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% + 4px);
+            height: 0;
+            top: -2px;
+            right: -2px;
+            z-index: -1;
+            background-color: $color-white;
+            transition: height 0.2s ease;
+        }
+
+        &.btn-checked {
+            border-radius: 10rem;
+            border: 2px solid $color-primary;
+            color: $color-primary;
+            background-color: $color-white;
+            text-align: center;
+            font-size: 1.125rem;
+            font-family: "FedraSansMedium", sans-serif;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            z-index: 1;
+            transition: color 0.2s ease;
+            text-decoration: none;
+            width: 10rem;
+            height: 2.2rem;
+            padding: 0.4rem;
+            line-height: 1rem;
+            font-size: 0.9rem;
+            margin-block-start: 0.5rem;
+
+            @include respond(mini-desktop) {
+                width: 25rem;
+                height: 5.5rem;
+                padding: 0.4rem;
+                line-height: 2.2rem;
+                font-size: 2.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include beforeCheckedBtn;
+
+            &::after {
+                position: absolute;
+                // content: "";
+                width: calc(100% + 4px);
+                height: 0;
+                top: -2px;
+                right: -2px;
+                z-index: -1;
+                background-color: $color-white;
+                transition: height 0.2s ease;
+            }
+        }
+    }
+
+    &:hover .btn,
+    &:focus .btn,
+    &:focus-within .btn {
+        color: $color-primary;
+
+        &::after {
+            height: calc(100% + 4px);
+        }
+
+        &.btn-checked {
+            @include beforeCheckedBtn;
+
+
+            &::after {
+                position: absolute;
+                // content: "";
+                width: calc(100% + 4px);
+                height: 0;
+                top: -2px;
+                right: -2px;
+                z-index: -1;
+                background-color: $color-white;
+                transition: height 0.2s ease;
+            }
+        }
+    }
+}
+
+form {
+    padding-block-start: 1rem;
+
+    & .jobs {
+        display: flex;
+        gap: 1.1rem;
+        flex-wrap: wrap;
+
+        @include respond(mini-desktop) {
+            gap: 2rem;
+        }
+    }
+
+    .person-detail {
+        &-input {
+            border: none;
+        }
+    }
+
+    &>label {
+        // display: flex;
+        height: 65px;
+    }
+
+    & input[type=checkbox] {
+        opacity: 0;
+        display: none;
+    }
+
+    & .btn-green {
+        @include global-btn($color-black, $color-secondary, $color-secondary);
+        border-radius: 10rem;
+
+        width: 11rem;
+        height: 3.15rem;
+
+
+        @include respond(mini-desktop) {
+            width: 25.25rem;
+            height: 7rem;
+            font-size: 2.5rem;
+            margin-block-start: 1.5rem;
+        }
+    }
+
+    & .hidden {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+
+.fixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: -11%;
+    right: 0;
+    width: 100%;
+    height: 9.5rem;
+    // background: url("../../../assets/images/job-section/briefcase.webp") no-repeat;
+    background: $color-white;
+    box-shadow: 0px 0px 2px 1px rgba($color-primary, .2);
+    z-index: 15;
+
+    transition: 0.3s all;
+
+    @include respond(mini-desktop) {
+        bottom: -42rem;
+        height: auto;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:target {
+        bottom: 0;
+    }
+
+    &-after-click {
+        bottom: -7%;
+    }
+
+    &-mobile-arrow {
+        display: none;
+
+        @include respond(mini-desktop) {
+            width: 2.31rem;
+            display: flex;
+            height: auto;
+            margin-block-start: 3rem;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+
+    }
+
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding-block-start: 3.25rem;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+            padding-block-start: 2.25rem;
+        }
+
+        p {
+            width: 9.82rem;
+            font-size: 1.17rem;
+            height: 3.1rem;
+            line-height: 1.6rem;
+            //   color: #000;
+            margin-inline-end: 0.95rem;
+
+            @include respond(mini-desktop) {
+                width: fit-content;
+                font-size: 3rem;
+                height: 3.1rem;
+                line-height: 3.2rem;
+                margin-inline-end: 0.95rem;
+                align-self: center;
+                margin-block-end: 1.55rem;
+            }
+        }
+
+        .submit-btn {
+            @include respond(mini-desktop) {
+                align-self: center;
+            }
+
+            &>label {
+                width: 1px;
+                font-size: 0px;
+            }
+        }
+    }
+
+    .person-detail {
+        &-input {
+            position: relative;
+            border: none;
+            height: fit-content;
+
+            &#firstName {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1.3rem;
+                    right: 2.15rem;
+                    width: 0.75rem;
+                    height: auto;
+                    aspect-ratio: 1 / 1;
+                    background: url(../assets/images/job-section/user@2x.webp) no-repeat;
+                    background-size: cover;
+                    top: 50%;
+                    transform: translate(0, -50%);
+
+                    @include respond(mini-desktop) {
+
+                        right: 6rem;
+                        width: 2rem;
+
+                    }
+
+                }
+            }
+
+            &#phoneNumber {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1.3rem;
+                    right: 2.15rem;
+                    width: 0.55rem;
+                    height: auto;
+                    aspect-ratio: 11 / 17;
+                    background: url(../assets/images/job-section/hand-phone@2x.webp) no-repeat;
+                    background-size: cover;
+                    top: 50%;
+                    transform: translate(0, -50%);
+
+                    @include respond(mini-desktop) {
+
+                        right: 6rem;
+                        width: 1.7rem;
+
+                    }
+                }
+            }
+
+            @include respond(mini-desktop) {
+                padding-inline: 2rem;
+
+            }
+
+            &>input {
+
+                height: 3.35rem;
+                width: 28rem;
+                font-size: 1rem;
+                border-radius: 5rem;
+                border: solid 1px #e4e4e4;
+                background-color: #f0f6ff;
+                margin-inline: 0.5rem;
+                padding-inline-start: 2.54rem;
+                padding-inline-end: 2.5rem;
+
+
+                @include respond(mini-desktop) {
+                    width: 100%;
+                    height: 8.7rem;
+                    font-size: 2.5rem;
+                    line-height: 3.2rem;
+                    margin-inline-end: 0.95rem;
+                    align-self: center;
+                    margin-block: 0.85rem;
+                    padding-inline-start: 6.5rem;
+
+                }
+
+                &.error-input {
+                    border-color: $error-border;
+                    background: $error-bg;
+                }
+            }
+        }
+
+        // &-btn {
+        //     height: 65px;
+        // }
+    }
+
+    &-smiley {
+        position: absolute;
+        left: 0;
+        top: -0.2rem;
+        transform: translate(-50%, 0);
+        z-index: -1;
+
+        @include respond(mini-desktop) {
+            top: 0px;
+            width: 32rem;
+            height: auto;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+
+    &-submitted {
+        display: flex;
+        align-items: center;
+        padding-inline-start: 8rem;
+        padding-inline-end: 8rem;
+        width: 100%;
+        height: 70%;
+
+        &-check {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 1rem;
+
+            h4 {
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+            }
+
+            p {
+                line-height: 1.2rem;
+            }
+        }
+    }
+
+    & .credit {
+        display: block;
+        font-size: 0.8rem;
+        text-align: left;
+        z-index: 10;
+
+        @include respond(mini-desktop) {
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+            font-size: 2.3rem;
+            margin-block-start: 3rem;
+            margin-block-end: 2.5rem;
+        }
+
+        &-logo {
+            width: 1rem;
+            height: auto;
+
+            @include respond(mini-desktop) {
+                width: 2.5rem;
+            }
+        }
+    }
+}
+
+.error {
+    position: fixed;
+    font-size: 0.8rem;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 4rem);
+    width: auto;
+    text-align: right;
+    padding-block: 3rem;
+    padding-inline: 4rem;
+    animation: fadeIn 0.3s;
+    border-color: $error-border;
+    background: rgba(#d22727, 1);
+    border-radius: 20px;
+    z-index: 10;
+
+    transition: height 0.3s;
+
+    &:empty {
+        display: none;
+        height: 0;
+        transition: height 0.3s;
+    }
+
+    @include respond(mini-desktop) {
+        position: fixed;
+        font-size: 2.5rem;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, 4rem);
+        width: 80%;
+        text-align: right;
+        padding-block: 3rem;
+        padding-inline: 4rem;
+        animation: fadeIn 0.3s;
+        border-color: $error-border;
+        background: rgba(#d22727, 1);
+        border-radius: 20px;
+
+        &:empty {
+            height: 0;
+            display: none;
+        }
+    }
+
+}

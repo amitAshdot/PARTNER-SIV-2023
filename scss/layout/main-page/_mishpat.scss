@@ -1,0 +1,109 @@
+ .mishpatiWrap {
+     width: 100%;
+     line-height: 100%;
+     padding: 1% 0 4rem 0;
+     background: #ffffff;
+     display: inline-block;
+     box-sizing: border-box;
+     border: 0px solid green;
+
+     @include respond(mini-desktop) {
+         padding-block-end: 10rem;
+     }
+
+ }
+
+ .mishpatiWrap .conditions {
+     width: 63%;
+     color: #000000;
+     margin: 0 auto;
+     box-sizing: border-box;
+     border: 0px solid green;
+
+     @include respond(mini-desktop) {
+         width: 85%;
+     }
+ }
+
+ .mishpatiWrap .conditions .mishTite {
+     font-size: 1.3rem;
+     font-family: simpler-bolder;
+     text-align: right;
+     line-height: 100%;
+     margin: 2% auto 0 auto;
+     border: 0px solid green;
+
+     @include respond(mini-desktop) {
+         font-size: 2.2rem;
+         padding-block-start: 3rem;
+         padding-block-end: 1rem;
+     }
+ }
+
+ .mishpatiWrap .conditions ul.mishpatiot li:before {
+     content: "\25A0";
+     color: #2dd5c4;
+     position: absolute;
+     top: -0.05em;
+     right: 0;
+     font-size: 1.2rem;
+     //  font-size: 16px;
+     border: 0px solid green;
+     overflow: hidden;
+
+     @include respond(mini-desktop) {
+         top: 0;
+         font-size: 2rem;
+         //  font-size: 16px;
+         line-height: 100%;
+         overflow: hidden;
+     }
+ }
+
+ .mishpatiWrap .conditions ul.mishpatiot {
+     margin: 1% 0 0 0;
+     list-style-type: none;
+     border: 0px solid green;
+ }
+
+ .mishpatiWrap .conditions ul.mishpatiot li {
+     color: #000000;
+     position: relative;
+     text-align: right;
+     font-size: 0.8rem;
+     padding: 0 2% 0 2%;
+     margin: 0 0 0.5% 0;
+     line-height: 115%;
+     border: 0px solid blue;
+
+     @include respond(mini-desktop) {
+         font-size: 1.7rem;
+         padding: 0 2rem 0 1rem;
+     }
+ }
+
+ .mishpatiWrap .conditions ul.mishpatiot li a {
+     color: #2cd5c4;
+     text-decoration: none;
+     transition: 0.3s all;
+ }
+
+ .mishpatiWrap .conditions ul.mishpatiot li a:hover {
+     color: #000000;
+ }
+
+ //  .mishpatiWrap .siv_downL {
+ //      display: none;
+
+ //      @include respond(mini-desktop) {
+ //          display: block;
+ //          position: absolute;
+ //          left: 0;
+ //          bottom: 17%;
+ //          width: 6.1rem;
+ //      }
+ //  }
+
+ //  .mylink {
+ //      display: none;
+ //  }

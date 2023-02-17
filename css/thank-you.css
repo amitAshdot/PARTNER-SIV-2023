@@ -1,0 +1,41 @@
+body,html{
+    font-size:1vw;
+}
+@media only screen and (max-width: 64em){
+  body,html{
+    font-size:2.5vw;
+}  
+}
+.thanks {
+    background-color: #30d4c3;
+    text-align: center;
+    font-size: 32px;
+    line-height: 37px;
+    color: white;
+    height: calc(100vh - 16px - 10vw);
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.section.tvoffer {
+    background: #4c4c4c;
+    padding: 20px;
+    color: white;
+    font-size: 27px;
+}
+
+img {
+    position: absolute;
+    left: 8px;
+}
+h1 {
+    font-size: 2.3rem;
+        line-height: 2.5rem;
+
+}
+

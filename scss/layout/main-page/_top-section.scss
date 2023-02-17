@@ -1,0 +1,155 @@
+.top {
+    &-section {
+        background-color: $color-primary;
+
+        @include respond(mini-desktop) {
+            padding-top: 0.5rem;
+        }
+
+        &-text {
+            text-align: center;
+            color: $color-white;
+            margin-block-start: 2.8rem;
+
+            h1 {
+
+                @include respond(mini-desktop) {
+                    display: block;
+                    font-size: 2.9rem;
+                }
+            }
+
+            .h1 {
+                font-family: 'simpler-bolder', sans-serif;
+                line-height: 1;
+
+
+                span {
+                    display: block;
+                    font-size: 2.7rem;
+
+
+                    @include respond(mini-desktop) {
+                        display: block;
+                        font-size: 2.9rem;
+                    }
+                }
+            }
+
+            span.PF-text {
+                font-size: 5.3rem;
+                -webkit-text-stroke: 2px #FFFFFF;
+                text-shadow: 0px 4.42295px 10.4677px #006962, 0px 4.42295px 6.63443px #006962;
+
+                @include respond(mini-desktop) {
+                    font-size: 5.8rem;
+                    -webkit-text-stroke: 1.065px #FFFFFF;
+                    text-shadow: 0px 2px 4.73333px #006962, 0px 2px 3px #006962;
+                }
+            }
+        }
+    }
+}
+
+
+.yellow {
+    &-container {
+        background-color: $color-secondary;
+
+        max-width: 82%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 15px 15px 0 0;
+        width: 54.18rem;
+        border: 4px solid #ffffff;
+        border-bottom: 0;
+        color: black;
+        font-family: "simpler-bolder", sans-serif;
+        overflow: visible;
+        margin-block-start: 2.8rem;
+        padding-block-start: 2.8rem;
+        padding-block-end: 1rem;
+        padding-inline: 2rem;
+
+        @include respond(mini-desktop) {
+            width: 33.7rem;
+            padding-block-start: 1.4rem;
+            padding-inline: 0.91rem;
+            padding-block-end: 7rem;
+            margin-block-start: 3.8rem;
+        }
+
+
+        p {
+            font-size: 4.2rem;
+            line-height: 1;
+
+            @include respond(mini-desktop) {
+                font-size: 3rem;
+            }
+        }
+
+        .desk-title {
+            font-size: 4.2rem;
+
+            @include respond(mini-desktop) {
+                font-size: 3.2rem;
+            }
+        }
+
+        .bold-amount {
+            font-family: 'simpler-bolder';
+            font-size: 7.5rem;
+
+            @include respond(mini-desktop) {
+                font-size: 5.5rem;
+            }
+        }
+
+        .refer-small {
+            font-size: 18px;
+            padding-top: 40px;
+            text-align: right;
+            font-family: 'simpler', sans-serif;
+
+            @include respond(mini-desktop) {
+                font-size: 1.2rem;
+                padding-top: 2rem;
+                text-align: center;
+            }
+        }
+
+        & .avatar-static {
+            position: absolute;
+            right: -8.88rem;
+            bottom: -1.1rem;
+            width: 9.85rem;
+            z-index: 2;
+            pointer-events: none;
+
+            @include respond(mini-desktop) {
+                right: -7.88rem;
+                bottom: 5rem;
+                width: 8.5rem;
+            }
+        }
+
+        .avatar-ilan {
+            position: absolute;
+            left: -11.3rem;
+            bottom: 0px;
+            width: 13.86rem;
+            z-index: 2;
+            pointer-events: none;
+
+
+            @include respond(mini-desktop) {
+                left: -9.9rem;
+                bottom: 6rem;
+                width: 11.86rem;
+            }
+        }
+    }
+
+
+}

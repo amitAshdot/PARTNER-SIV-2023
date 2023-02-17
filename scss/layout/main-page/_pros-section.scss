@@ -1,0 +1,182 @@
+.pros {
+    &-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-block-start: 4.5rem;
+        overflow: visible;
+
+        @include respond(mini-desktop) {
+            padding-block-start: 5rem;
+            padding-block-end: 3rem;
+        }
+    }
+
+    &-container {
+        width: 60rem;
+        align-self: center;
+        padding-block-end: 0rem;
+    }
+
+    &-title {
+        font-size: 2.4rem;
+        font-family: 'simpler-bolder', sans-serif;
+        text-align: center;
+        padding-block-start: 1rem;
+        padding-block-end: 2.4rem;
+
+        @include respond(mini-desktop) {
+            font-size: 3.5rem;
+            line-height: 100%;
+            margin-inline: auto;
+            width: 80%;
+            margin-block-end: 0rem;
+        }
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        padding: 0 7rem;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+
+        }
+
+        &>div {
+            width: 50%;
+            padding-inline: 2.7rem;
+            margin-block-end: 2.5rem;
+
+            @include respond(mini-desktop) {
+                width: 90%;
+            }
+
+            &>img {
+                width: 12rem;
+                margin: 0 auto;
+                height: auto;
+
+                @include respond(mini-desktop) {
+                    width: 23rem;
+
+                }
+            }
+        }
+
+        &.reverse {
+            flex-direction: row-reverse;
+
+            @include respond(mini-desktop) {
+                flex-direction: column;
+                margin-block: 5rem;
+            }
+
+            // &>div {
+            //     &:nth-child(2) {
+            //         // margin-block-start: -5rem;
+            //     }
+            // }
+        }
+
+        &-title {
+            font-family: 'simpler-bold', sans-serif;
+            font-size: 1.35rem;
+
+            @include respond(mini-desktop) {
+                font-size: 3rem;
+                text-align: right;
+            }
+
+        }
+
+        & p {
+            font-size: 1rem;
+
+            @include respond(mini-desktop) {
+                font-size: 2.5rem;
+                text-align: right;
+            }
+        }
+    }
+
+    &-img-container {
+        display: flex;
+        justify-content: center;
+
+        // @include respond(mini-desktop) {
+        //     &.first-image {
+        //         margin-block-end: 10rem;
+        //     }
+        // }
+
+    }
+
+    &-floatImg {
+        position: absolute;
+
+        // &-top {
+        //     top: 4.1rem;
+        //     right: 0;
+        //     width: 42rem;
+        //     height: auto;
+
+        //     z-index: -1;
+
+        //     @include respond(mini-desktop) {
+        //         top: 6rem;
+        //         right: -34px;
+        //         height: 60rem;
+        //         width: 38rem;
+        //         z-index: -1;
+        //     }
+        // }
+
+        // &-staticSofa {
+        //     bottom: -6.5rem;
+        //     right: 50%;
+        //     width: 44rem;
+        //     height: auto;
+
+        //     z-index: 1;
+        //     transform: translateX(50%);
+        // }
+
+        // &-bottom {
+
+        //     &-R {
+        //         bottom: 1rem;
+        //         right: 2rem;
+        //         width: 43rem;
+        //         height: auto;
+
+        //         z-index: 1;
+        //     }
+
+        //     &-L {
+        //         height: auto;
+
+        //         bottom: -6rem;
+        //         left: 0;
+        //         z-index: 1;
+        //     }
+        // }
+
+        // &-wrapQues {
+        //     bottom: 1rem;
+        //     height: auto;
+
+        //     @include respond(mini-desktop) {
+        //         display: none;
+        //     }
+        // }
+
+        // &-sofa {
+        //     bottom: 0;
+        //     left: 1rem;
+        //     height: auto;
+
+        // }
+    }
+}

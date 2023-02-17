@@ -1,0 +1,186 @@
+hr {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ffffff;
+    width: 97%;
+    margin: auto;
+}
+
+.wrapQues {
+    &-section {
+        position: relative;
+        overflow: visible;
+    }
+
+    padding: 4% 0 4% 0;
+    background: #000000;
+
+    // @include respond(mini-desktop) {
+    //     //  font-size: 2.1111vw;
+    // }
+}
+
+.accordionQues {
+    width: 58.5rem;
+    margin: 0 auto;
+    /*background: #ffffff;*/
+    // padding-inline: 1.5rem;
+    border: 0px solid green;
+}
+
+.wrapQues h2 {
+    width: 58.5rem;
+    color: #2cd5c4;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 2.65rem;
+    font-family: 'simpler-bolder', sans-serif;
+
+    /*background: #2dd5c4;*/
+    @include respond(mini-desktop) {
+        font-size: 3.8rem;
+    }
+}
+
+.wrapQues h2 span {
+    font-family: 'simpler-bolder', sans-serif;
+}
+
+.wrapQues h2 span.line {
+    width: 7%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000000;
+}
+
+.accordionQues .quesBox {
+    /*padding: 1em 0 1.5em 0;*/
+    border: 0px solid green;
+}
+
+.accordionQues .quesBox .questions {
+    text-align: right;
+    color: $color-primary;
+    border: 0px solid red;
+
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #2cd5c4;
+    font-family: 'simpler-bold', sans-serif;
+    font-size: 1.08rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.2rem;
+    padding-block: 1.17rem;
+    cursor: pointer;
+}
+
+.accordionQues .quesBox .questions img {
+    float: left;
+    width: 1.63rem;
+    height: auto;
+
+    padding: 0 0 0 0.5rem;
+    transition: all 0.5s;
+
+    @include respond(mini-desktop) {
+        width: 2.63rem;
+    }
+}
+
+.accordionQues .quesBox .questions a span.theQues {
+    width: 85%;
+    margin: 0 0.5em 0 0;
+    float: right;
+    color: $color-primary;
+    border: 0px solid red;
+}
+
+.accordionQues .quesBox .mishpatiMore {
+    display: none;
+    font-size: 1.1em;
+    text-align: right;
+    line-height: 145%;
+    padding: 0 0 2% 0;
+    width: 98%;
+    margin: 0 auto;
+    color: #2CD5C4;
+    border: 0px solid red;
+}
+
+.accordionQues .quesBox .mishpatiMore p {
+    width: 95%;
+    line-height: 125%;
+    padding-inline-start: 1rem;
+}
+
+// .accordionQues .quesBox .mishpatiMore a {
+//     color: #000000;
+//     text-decoration: underline;
+// }
+
+// .accordionQues .quesBox .mishpatiMore ul.quesList {
+//     width: 95%;
+//     list-style-type: lower-alpha;
+//     border: 0px solid green;
+// }
+
+// .accordionQues .quesBox .mishpatiMore ul.quesList li {
+//     display: list-item;
+// }
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .wrapQues {
+        padding: 6% 0 15% 0;
+    }
+
+    .accordionQues {
+        width: 90%;
+    }
+
+    .wrapQues h2 {
+        width: 90%;
+        // font-size: 8em;
+        /*padding: 5% 0 5% 0;*/
+    }
+
+    .accordionQues .quesBox .questions {
+        width: 99%;
+        font-size: 2.1rem;
+    }
+
+    .accordionQues .quesBox .mishpatiMore {
+        width: 95%;
+        font-size: 4em;
+        text-align: justify;
+        line-height: 100%;
+        padding: 0;
+        border: 0px solid green;
+    }
+
+    .accordionQues .quesBox .mishpatiMore p {
+        line-height: 120%;
+        font-size: 2rem;
+    }
+
+    .accordionQues .quesBox .questions a img {
+        width: 5%;
+        height: auto;
+
+        margin: 1% 0 0 0;
+        transition: all 0.3s;
+    }
+
+    .accordionQues .quesBox .questions a span.theQues {
+        padding: 1% 0 0 0;
+    }
+
+    .accordionQues .quesBox .mishpatiMore ul.quesList li {
+        margin: 0 0 5% 0;
+    }
+
+
+}
