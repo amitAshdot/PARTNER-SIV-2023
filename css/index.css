@@ -141,13 +141,12 @@ h2 {
 
 h3 {
   font-size: 2.91rem;
-  line-height: 3rem;
+  line-height: 1;
   letter-spacing: 0.03rem;
 }
 @media only screen and (max-width: 64em) {
   h3 {
-    font-size: 4.1rem;
-    line-height: initial;
+    font-size: 3.8rem;
     letter-spacing: 0.03rem;
   }
 }
@@ -451,7 +450,7 @@ p a {
 @media only screen and (max-width: 64em) {
   .form#top {
     width: 90%;
-    padding: 1rem 5% 4rem 5%;
+    padding: 1rem 5% 0rem 5%;
     flex-direction: column;
   }
 }
@@ -989,10 +988,10 @@ p a {
   color: white;
 }
 .advantage-titles .advantage-subtitle {
-  font-family: "simpler", sans-serif;
+  font-family: "simpler-light", sans-serif;
   font-weight: normal;
   line-height: 1;
-  font-size: 2.8rem;
+  font-size: 3.8rem;
 }
 .advantage-content {
   display: flex;
@@ -1247,6 +1246,7 @@ p a {
 }
 @media only screen and (max-width: 64em) {
   .israel-text * {
+    -webkit-text-stroke: 0.8px #FFFFFF;
     line-height: 2.3rem;
     font-size: 2.3rem;
     text-align: center;

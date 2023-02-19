@@ -194,6 +194,7 @@
         filter: opacity(0.6);
 
         @include respond(mini-desktop) {
+            -webkit-text-stroke: 0.8px#FFFFFF;
             line-height: 2.3rem;
             font-size: 2.3rem;
             text-align: center;

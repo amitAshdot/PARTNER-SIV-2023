@@ -49,12 +49,12 @@ h3 {
   // font-size: 2.31rem;
   // line-height: 2.35rem;
   font-size: 2.91rem;
-  line-height: 3rem;
+  line-height: 1;
   letter-spacing: 0.03rem;
 
   @include respond(mini-desktop) {
-    font-size: 4.1rem;
-    line-height: initial;
+    font-size: 3.8rem;
+    // line-height: initial;
     letter-spacing: 0.03rem;
   }
 }
