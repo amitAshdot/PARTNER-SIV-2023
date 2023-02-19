@@ -186,12 +186,13 @@
     }
 
     &-text * {
-        -webkit-text-stroke: 0.1px #FFFFFF;
+        -webkit-text-stroke: 0.8px #FFFFFF;
         color: transparent;
         text-align: center;
         font-size: 3.2rem;
         line-height: 1;
-        filter: opacity(0.6);
+        // filter: opacity(0.6);
+        font-weight: normal;
 
         @include respond(mini-desktop) {
             -webkit-text-stroke: 0.8px#FFFFFF;

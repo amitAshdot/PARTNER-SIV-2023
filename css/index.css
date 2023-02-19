@@ -1242,12 +1242,12 @@ p a {
   }
 }
 .israel-text * {
-  -webkit-text-stroke: 0.1px #FFFFFF;
+  -webkit-text-stroke: 0.8px #FFFFFF;
   color: transparent;
   text-align: center;
   font-size: 3.2rem;
   line-height: 1;
-  filter: opacity(0.6);
+  font-weight: normal;
 }
 @media only screen and (max-width: 64em) {
   .israel-text * {
